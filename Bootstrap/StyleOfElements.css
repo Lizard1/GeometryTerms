@@ -1,0 +1,78 @@
+#log{
+    width: 50%;
+    height: 50%;
+}
+
+
+
+.forShow {
+    width: 100%;
+}
+
+body {
+    color: #fff;
+    background-color: #5bc0de !important;
+}
+
+.tab-content{
+    text-align: justify;
+}
+
+.jq-navigate, li{
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: .2s;
+    transition-timing-function: ease-in-out;
+}
+
+
+#divForDisplay {
+    width: 300px;
+    height: 300px;
+}
+
+img {
+    width: 80%;
+    height: 80%;
+}
+
+#headerDiv {
+    height: 100%;
+}
+
+li:hover {
+    background: #419641;
+}
+
+.backGroundForLi {
+    background: #449d44;
+}
+
+#listDefinitions{
+    height: 400px;
+    overflow-y: scroll;
+}
+
+
+img[tabindex="0"] {
+    cursor: zoom-in;
+}
+img[tabindex="0"]:focus {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: auto;
+    height: auto;
+    max-width: 99%;
+    max-height: 99%;
+    margin: auto;
+    box-shadow: 0 0 20px #000, 0 0 0 1000px rgba(210,210,210,.4);
+}
+img[tabindex="0"]:focus,  /* убрать строку, если не нужно, чтобы при клике на увеличенное фото, оно возвращалось в исходное состояние */
+img[tabindex="0"]:focus ~ * {
+    pointer-events: none;
+    cursor: zoom-out;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="../Bootstrap/StyleOfElements.css">
+    <link rel="stylesheet" href="../Bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../Bootstrap/css/bootstrap.css"/>
+</head>
+
+<body>
+<div class="container-fluid">
+    <div id="templatehead"></div>
+
+    <br/>
+    <br/>
+
+    <div id="centertemplate"></div>
+    <br/>
+
+    <div class="row">
+        <div class="col-md-2">
+            <ul id="listDefinitions"></ul>
+        </div>
+        <div id="oop222"></div>
+</div>
+
+
+<script src="../JS/Libraries/JqueryLibrary.js"></script>
+<script src="../JS/Libraries/Mustache.js"></script>
+<script src="../JS/Data/data.js"></script>
+<script src="../JS/PerformerFiles/Service.js"></script>
+<script src="../JS/PerformerFiles/Model.js"></script>
+<script src="../JS/PerformerFiles/FirstStart.js"></script>
+<script src="../JS/PerformerFiles/Discriber.js"></script>
+<script src="../JS/PerformerFiles/Controller.js"></script>
+
+<script type="text/template" id="headerTempl">
+    <div class="row" id="headerDiv">
+        <div class="col-md-12">
+            {{citeHead}}
+        </div>
+    </div>
+</script>
+
+<script type="text/template" id="midletemplate">
+    <h3 id="title" style="text-align: center">{{Title}}</h3>
+    <div class="row">
+        <div class="col-md-4"><input type="text" size="40" id="Search" placeholder="Поиск..." /></div>
+        <div class="col-md-4">
+            <div class="btn-group-sm">
+                <button class="btn btn-xs btn-success jq-navigate" href="#tab-1" data-toggle="tab" id="descriptiveGeometry">{{btn1}}</button>
+                <button class="btn btn-xs btn-success jq-navigate" href="#tab-1" data-toggle="tab" id="engineeringGraphics">{{btn2}}</button>
+                <button class="btn btn-xs btn-success jq-navigate" href="#tab-1" data-toggle="tab" id="computerGraphics">{{btn3}}</button>
+                <button class="btn btn-xs btn-success jq-navigate" href="#tab-1" data-toggle="tab" id="graphicsProgramming">{{btn4}}</button>
+                <button class="btn btn-xs btn-success jq-navigate" href="#tab-1" data-toggle="tab" id="other">{{btn5}}</button>
+                <button class="btn  btn-success jq-navigate" id="jq-allDefinitions">{{btn6}}</button>
+            </div>
+        </div>
+
+        <div class="col-md-4"></div>
+
+    </div>
+</script>
+
+    <script type="text/template" id="exampleTemplateTrying">
+        <div class="col-md-7">
+            <div class="tab-content">
+                <div class="tab-pane fade in active" id="tab-1">
+                    <div>{{etymology1}}</div>
+                    <hr/>
+                    <div>{{relatedWords3}}</div>
+                    <hr/>
+                    <div>{{soursesDesc4}}</div>
+                    <hr/>
+                    <p>{{discriptionDesc2}}</p>
+                    <hr/>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3" id="divForDisplay">
+            <img id="imageForDefinitions" src={{urlPick}} tabindex="0">
+        </div>
+    </script>
+
+
+    <script>
+        justdoit();
+
+        /*  <div class="etymology">{{etymology1}}</div>
+         <div class="relatedWords">{{relatedWords3}}</div>
+         <div class="sourses">{{soursesDesc4}}</div>
+         <p class="discription">{{discriptionDesc2}}</p>*/
+    </script>
+        </div>
+    </body>
+    </html>
+
